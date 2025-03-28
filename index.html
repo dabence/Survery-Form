@@ -1,0 +1,67 @@
+<h1 id="title">Food Survey</h1>
+<p id="description">A survey to collect people's favorite foods.</p>
+<form id="survey-form">
+  <label id="name-label" for="name">
+    What is your name? &nbsp;
+    <input type="text" id="name" name="name" placeholder="Enter name" required />
+  </label>
+
+  <label id="email-label" for="email">
+    What is your email? &nbsp;
+    <input type="email" id="email" name="email" placeholder="Enter email" required/>
+  </label>
+
+  <label id="number-label" for="age">
+    What is your age? &nbsp;
+    <input type="number" min="6" max="120" id="number" name="age" placeholder="Enter age" required />
+  </label>
+
+  <label for="favoriteFood">
+    What is your favorite food? &nbsp;
+    <select id="dropdown" name="favoriteFood">
+      <option value="">(select one)</option>
+      <option value="1">Burger</option>  
+      <option value="2">Cake</option>
+      <option value="2">French fries</option>  
+      <option value="3">Ice cream</option>   
+      <option value="4">Pizza</option>  
+      <option value="5">Spaghetti</option>  
+    </select>
+  </label>
+
+   <fieldset>
+     <legend>What is your category in food?</legend>
+       <p><input type="radio" name="favoriteFoodCategory" value="appetizer" checked/> Appetizer</p>
+
+      <p><input type="radio" name="favoriteFoodCategory" value="main dish"/> Main Dish</p>
+
+        <p><input type="radio" name="favoriteFoodCategory" value="dessert"/> Dessert</p>
+   </fieldset>
+
+
+      <fieldset>
+     <legend>What is your favorite dining restaurants?</legend>
+       <p><input type="checkbox" name="favoriteRestaurant" value="fast food"/> Fast Food</p>
+
+      <p><input type="checkbox" name="favoriteRestaurant" value="Karinderya"/> Karinderya</p>
+
+        <p><input type="checkbox" name="favoriteRestaurant" value="fine dining"/> Fine dining</p>
+
+        <p><input type="checkbox" name="favoriteRestaurant" value="unlimited"/> Unlimited (unli wings, korean BBQ)</p>
+
+        <p><input type="checkbox" name="favoriteRestaurant" value="japanese"/> Japanese</p>
+   </fieldset>
+
+  <label for="comments">
+    What are your reasons for the choices you made?
+    <textarea>
+      
+    </textarea>
+
+  </label>
+   <input type="submit" id="submit" value="Submit"/>
+
+   
+   
+  
+</form>
